@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*NavBar Code*/
+
+.myNav {
+	background: #FFFFFF!important;
+}
+
+
+.navbar-brand {
+	font-size: 30px;
+	font-weight: bold;
+	  position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+	
+/*makes logo space*/
+	}
+
+
+.myNav a {
+	margin-right: 40px;
+	color: black !important;
+	border-bottom: solid 1px transparent; 
+	/*increases spacing between nav items, makes text white, border bottom is put here to remove the shaky effect it has without it*/
+}
+.myNav li a:hover {
+	border-bottom: solid 1px black;
+	/*adds line when hovered*/
+}
+.active a {
+	border-bottom: solid 1px black; 
+}
+
+
+/*VIDEO CODE*/
+
+.video-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  
+}
+
+.caption {
+	position: absolute;
+	top: 38%;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.caption h1 {
+	padding-bottom: 30px;
+	padding-top: 50px;
+}
+
+.caption p {
+	font-size: 15px;
+}
+.caption btn {
+	padding-top: 25px;
+	border-radius: 50%!important;
+	font-size: 15px;
+}
+/*SECTION WITH 3 IMAGES ON HOME PAGE*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.home1 {
+	padding-top: 50px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.trending img:hover {
+	opacity: 0.7;
+}
+.trending img {
+	filter: brightness(70%);
+
+}
+.middle {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	color: white;
+	font-size: 25px;
+}
+
