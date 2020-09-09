@@ -3,6 +3,19 @@
 
 /*NavBar Code*/
 
+.fa-heart {
+	animation: fall 10s linear forwards;
+	color: black;
+	position: absolute;
+	top: -20px;
+}
+@keyframes fall {
+	to {
+		transform: translateY(200vh);
+	}
+}
+
+
 .myNav {
 	background: #FFFFFF!important;
 }
@@ -33,6 +46,23 @@
 .active a {
 	border-bottom: solid 1px black; 
 }
+nav i:hover {
+	opacity: 0.5;
+}
+nav input[type="search"] {
+	padding: 0 0px!important;
+	width: 0px!important;
+}
+nav i .icon.active {
+	transition: all 0.3s ease;
+}
+nav input[type="search"].active {
+	width: 250px!important;
+	padding: 0 10px!important;
+	transition: all 0.5s 0.2s ease!important; 
+	
+}
+
 
 
 /*VIDEO CODE*/
@@ -75,6 +105,26 @@
 	border-radius: 50%!important;
 	font-size: 15px;
 }
+/*HOME PAGE CAROUSEL*/
+
+.water{
+	padding-top: 50px!important;
+	padding-bottom: 50px!important;
+}
+
+.carousel .card-deck {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+		width: 85%;
+
+}
+.carousel .carousel-item .card img:hover{
+	transform: scale(1.1);
+}
+
+
+
 /*SECTION WITH 3 IMAGES ON HOME PAGE*/
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 
@@ -82,15 +132,23 @@
 	padding-top: 50px;
 	text-align: center;
 	padding-bottom: 50px;
-}
-
-.trending img:hover {
-	opacity: 0.7;
-}
-.trending img {
-	filter: brightness(70%);
 
 }
+
+.card {
+	overflow: hidden;
+
+}
+.card img {
+transform-origin: 50% 65%;
+transition: transform 3s, filter 3s ease-in-out;
+
+}
+.card img:hover {
+	transform: scale(1.2);
+
+}
+
 .middle {
 	position: absolute;
   top: 50%;
@@ -99,4 +157,56 @@
 	color: white;
 	font-size: 25px;
 }
+/*FOOTER*/
+footer {
+	background: rgb(248, 248, 248);
+	padding: 25px;
+	margin-top: 200px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+}
+
+.bottom {
+  padding: 15px;
+  font-size: 30px!important;
+  width: 60px;
+  text-align: center;
+  text-decoration: none!important;
+  margin: 23px 14px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998!important;
+  color: white!important;
+}
+.fa-instagram {
+  background: linear-gradient(to top right, #405DE6,#5851DB,#833AB4, #C13584, #E1306C, #FD1D1D );
+  color: white!important;
+}
+.fa-linkedin {
+  background: #007bb5!important;
+  color: white!important;
+}
+.copy {
+	margin-top: 42px;
+}
+.keep input {
+	border: hidden;
+	border-bottom: solid #000000;
+    background: rgb(248, 248, 248);
+    outline: none;
+	padding-top: 42px;
+}
+.keep input[type="email"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: center; 
+            } 
 

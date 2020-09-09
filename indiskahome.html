@@ -4,36 +4,71 @@
 <meta charset="utf-8">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="indiskacss.css">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  ></script>
 <meta name = "viewport" content = "width=device-width, initial-scale= 1.0"/>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="images/logo.ico" type="image/x-icon"/>
 	
 
+<script>
+	$(document).ready(function() {
+		$(".fa-search").click(function() {
+			$(".icon").toggleClass("active");
+			$("input[type='search']").toggleClass("active");
+		});
+	});
 	
+	
+	
+
+</script>
 	
 <title>Indiska</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-light bg-light myNav"><!--gives light color for navbar and background, navbar-expand-sm = show menu items until screen gets very small-->
-	
+
+	<nav class="navbar navbar-expand-md navbar-light bg-light myNav sticky-top"><!--gives light color for navbar and background, navbar-expand-sm = show menu items until screen gets very small-->
 		<a href="indiskahome.html" class="navbar-brand">Indiska</a><!-- "navbar-brand" positions it at the top left corner-->
+		  
+
+		
+		
 		<button class="navbar-toggler" data-toggle ="collapse" data-target="#navbarMenu"> <!-- creates button for hamburger menu, data toggle opens and closes the menu as necessary, data-target targets it to the div class with menu items through the div's id-->
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarMenu"><!--places nav elements horizontally instead of vertically -->
 			<ul class="navbar-nav mr-auto"><!--wraps evry thing around, ml-auto positions on top right corner -->
-			<li class="nav-item"><a href="indiskafashion.html" class="nav-link ">Fashion</a></li>
-			<li class="nav-item"><a href="indiskainterior.html" class="nav-link">Interior</a></li>
-			<li class="nav-item"><a href="indiskastock.html" class="nav-link">Stock Sale</a></li>
-			<li class="nav-item"><a href="indiskaexplore.html" class="nav-link">Explore</a></li>
+			<li class="nav-item "><a href="indiskainterior.html" class="nav-link">Fashion</a></li>
+			<li class="nav-item "><a href="indiskainterior.html" class="nav-link">Interior</a></li>
+			<li class="nav-item "><a href="indiskastock.html" class="nav-link">Stock Sale</a></li>
+			<li class="nav-item "><a href="indiskaexplore.html" class="nav-link">Explore</a></li>
 		</ul>
 		</div>
+			
+		<form class="form-inline">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+			<a href="#"><i class="icon fa fa-fw fa-search"></i></a>
+			
+    
+  		</form>
+		<a href="#"><i class="fa fa-fw fa-user"></i></a>
+		<a href="#"><i class="fa fa-shopping-cart"></i></a>
+
+		
+
+
 		
 	</nav>
 	<main>
+
 		<div class="video-container">
+			
+
   			<video autoplay loop muted playsinline>
     			<source src="vid2.mp4" type="video/mp4" />
   			</video>
@@ -47,10 +82,73 @@
 			<a class="btn btn-outline-light btn-lg" href="#">Buy Now</a>
 		</div>
 		
+		<h1 class = "water text-center">World Water Day Specials</h1>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    
+  </ol>
+  		<div class="carousel-inner">
+    		<div class="carousel-item active">
+				<div class="card-deck">
+                <div class="card"> <img class="card-img-top" src="img5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Knitted Turtleneck</h5>
+                    <p class="card-text">Water is very important</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+                <div class="card"> <img class="card-img-top" src="img6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Plain Knitted Turtleneck</h5>
+                    <p class="card-text">Water is very important</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+                <div class="card"> <img class="card-img-top" src="img7.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Knitted Buttoned Cardigan</h5>
+                    <p class="card-text">Water is very important</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+              </div>
+      
+    		</div>
+    		<div class="carousel-item ">
+				<div class="card-deck">
+                <div class="card"> <img class="card-img-top" src="img8.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Knitted Buttoned Cardigan</h5>
+                    <p class="card-text">Water is very important</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+                <div class="card"> <img class="card-img-top" src="img9.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Wool Mix Knitted Sweater</h5>
+                    <p class="card-text">Water is very important</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+                <div class="card"> <img class="card-img-top" src="img10.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Striped Knitted Sweater</h5>
+                    <p class="card-text">Water is very important</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  </div>
+              </div>
+      
+    		</div>
+    		
+  		</div>
+		</div>
 		<h1 class="home1"> Trending Now </h1>
 		<div class="container trending">
 			<div class="card-deck">
-			<div class = "card ">
+			<div class = "card">
 				<img src="img4.jpg" class="img-fluid" alt = "fall fashion">
 				<div class="middle">Fall Fashion</div>
 			</div>
@@ -69,6 +167,26 @@
 	</main>
 
 	<footer>
+		<div class ="row text-center ">
+			<div class="col-md-4 social">
+				<a href="https://sv-se.facebook.com/IndiskaSE/" target ="_blank" class="fa fa-facebook bottom"></a>
+				<a href="https://www.instagram.com/indiskaofficial/?hl=en" target ="_blank"  class="fa fa-instagram bottom"></a>
+				<a href="https://www.linkedin.com/company/indiska-magasinet-ab" target ="_blank" class="fa fa-linkedin bottom"></a>
+				
+			</div>
+			<div class="col-md-4 copy">
+				<p>Copyright &copy; 2020 Indiska</p>
+			</div>
+			<div class="col-md-4 keep text-center">
+				<form>
+					<input type = "email" placeholder="Join Our Newsletter">
+				</form>
+				
+			
+			</div>
+		</div>
+		
+		
 		
 		
 	</footer>
