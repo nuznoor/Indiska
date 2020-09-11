@@ -3,17 +3,7 @@
 
 /*NavBar Code*/
 
-.fa-heart {
-	animation: fall 10s linear forwards;
-	color: black;
-	position: absolute;
-	top: -20px;
-}
-@keyframes fall {
-	to {
-		transform: translateY(200vh);
-	}
-}
+
 
 
 .myNav {
@@ -210,3 +200,23 @@ footer {
                 text-align: center; 
             } 
 
+/*PRODUCT PAGE*/
+.product .col-6 img{
+	max-height: 70%;
+		max-width:100%;
+	margin-top: 70px;	
+}
+.col-6 .information {
+	margin-top: 200px!important;
+}
+
+.round {
+	border-radius: 25px;
+	font-size: 15px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#changeText {
+	margin-top: 25px;
+	margin-left: 10px!important;
+}

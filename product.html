@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="indiskacss.css">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  ></script>
+<meta name = "viewport" content = "width=device-width, initial-scale= 1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/logo.ico" type="image/x-icon"/>
+	<script>
+		
+	$(document).ready(function() {
+		$(".fa-search").click(function() {
+			$(".icon").toggleClass("active");
+			$("input[type='search']").toggleClass("active");
+		});
+	});
+	
+		
+	
+	
+	
+
+</script>
+
+
+	
+<title>Indiska</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light myNav sticky-top"><!--gives light color for navbar and background, navbar-expand-sm = show menu items until screen gets very small-->
+		<a href="indiskahome.html" class="navbar-brand">Indiska</a><!-- "navbar-brand" positions it at the top left corner-->
+		  
+
+		
+		
+		<button class="navbar-toggler" data-toggle ="collapse" data-target="#navbarMenu"> <!-- creates button for hamburger menu, data toggle opens and closes the menu as necessary, data-target targets it to the div class with menu items through the div's id-->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarMenu"><!--places nav elements horizontally instead of vertically -->
+			<ul class="navbar-nav mr-auto"><!--wraps evry thing around, ml-auto positions on top right corner -->
+			<li class="nav-item "><a href="indiskainterior.html" class="nav-link">Fashion</a></li>
+			<li class="nav-item "><a href="indiskainterior.html" class="nav-link">Interior</a></li>
+			<li class="nav-item "><a href="indiskastock.html" class="nav-link">Stock Sale</a></li>
+			<li class="nav-item "><a href="indiskaexplore.html" class="nav-link">Explore</a></li>
+		</ul>
+		</div>
+			
+		<form class="form-inline">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+			<a href="#"><i class="icon fa fa-fw fa-search"></i></a>
+			
+    
+  		</form>
+		<a href="#"><i class="fa fa-fw fa-user"></i></a>
+		<a href="#"><i class="fa fa-shopping-cart"></i></a>
+
+		
+
+
+		
+	</nav>
+
+	
+	<main>
+
+		<div class="container product">
+			<div class="row">
+				<div class = "col-6">
+					<img src ="img5.jpg" alt ="dress">
+				</div>
+				<div class = "col-6 ">
+					<div class = "information">
+					<p class = "text-muted">Fashion/Dresses</p>
+					<h1>Knitted Turtleneck</h1>
+					<h1 class = "text-muted">$399</h1>
+					</div>
+					<br>
+					<div id = "myDIV">
+					<button type="button" class="btn btn-outline-dark round active" aria-pressed = "true" onclick = "document.getElementById('changeText').innerHTML = 'A classic, solid turtleneck in a soft cotton blend fabric. Ideal to layer under a wool coat during colder days or underneath a dress for a sophisticated look. Available in two colours.'">Description</button>
+					<button type="button" class="btn btn-outline-dark round " onclick = "document.getElementById('changeText').innerHTML = 'Material: 50 % Cotton, 50 % Lyocell <br>Fit: Normal <br> Neckline: Turtleneck'">Details</button>
+					<button type="button" class="btn btn-outline-dark round" onclick = "document.getElementById('changeText').innerHTML = 'Machine wash 30°C gentle cycle'">Washing</button>
+					<button type="button" class="btn btn-outline-dark round" onclick = "document.getElementById('changeText').innerHTML = 'HIIII'" >Sustainability</button>
+					<div id = "changeText">A classic, solid turtleneck in a soft cotton blend fabric. Ideal to layer under a wool coat during colder days or underneath a dress for a sophisticated look. Available in two colours.</div>
+					</div>
+					<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
