@@ -444,7 +444,6 @@ footer {
     margin: 0px;
     margin-bottom: 0px;
     margin-left: 11px;
-    margin-bottom: 15px;
   }
   .Edu-box:last-child{
     margin-left: 11px;
@@ -462,4 +461,5 @@ footer {
   #Portfolio, #Edu-detail, #Basic-detail{
     height: auto;
   }
+	
 }

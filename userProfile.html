@@ -97,6 +97,80 @@
                 </div>
               
             </div>
+			<h6 class="text-center" style="margin-left: 80px; margin-top: 300px;" >Below is a chart that compares the amounts of C02 emmitted to produce your purchases each month between Indiska and general stores in the market.</h6>
+			
+			<div class = "chart" style="width: 600px ">
+				
+			
+			<script src = "https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+			
+			<canvas id="myChart" width="50" height="50" style="margin-left: 350px; margin-top: 70px; "></canvas>
+			<script>
+				const CHART = document.getElementById("myChart");
+				console.log(CHART);
+				let myChart = new Chart(CHART,{
+					type: 'line',
+					data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    label: "CO2 Emission By General Stores",
+                    fill: false,
+                    lineTension: 0.3,
+                    backgroundColor: "rgba(75, 192, 192, 0.4)",
+                    borderColor: "rgba(75, 192, 192, 1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(75,192,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHitRadius: 10,
+                    data: [10, 14, 5, 9, 4, 7, 3],
+                }, {
+                    label: "CO2 Emission By Indiska",
+                    fill: true,
+                    lineTension: 0.3,
+                    backgroundColor: "rgba(75, 75, 192, 0.4)",
+                    borderColor: "rgba(75, 72, 192, 1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(75,72,192,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHitRadius: 10,
+                    data: [5, 6, 2.5, 3, 1.4, 2.2, 1.9],
+                }
+            ]}, 
+				options: {
+					scales: {
+						xAxes: [{
+							scaleLabel: {
+								display: true,
+								labelString: 'Months'
+							}
+						}],
+						yAxes: [{
+							scaleLabel: {
+								display: true,
+								labelString: 'C02 Emission (ppm)'
+							}
+						}]
+						
+					}
+				}
+					
+					
+				});
+				
+			</script>
+			</div>
+
         <!--</div>-->
         <div style="clear: both;"></div>
         <footer>
