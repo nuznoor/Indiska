@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="images/logo.ico" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<script>
 		
 	$(document).ready(function() {
@@ -73,8 +74,41 @@
 		<div class="container product">
 			<div class="row">
 				<div class = "col-6">
-					<img src ="img5.jpg" alt ="dress">
+					<img src ="img5.jpg" alt ="dress" id="ProductImg">
+					<div class="small-img-row">
+						<div class="small-img-col">
+							<img src="img5.jpg" alt = "dress" width="100%" class="small-img">
+						</div>
+						<div class="small-img-col">
+							<img src="img11.jpg" alt = "dress" width="100%" class="small-img">
+						</div>
+						<div class="small-img-col">
+							<img src="img12.jpg" alt = "dress" width="100%" class="small-img">
+						</div>
+						<div class="small-img-col">
+							<img src="img13.jpg" alt = "dress" width="100%" class="small-img">
+						</div>
+						
+					</div>
+					
 				</div>
+				<script>
+					var ProductImg  = document.getElementById("ProductImg");
+					var SmallImg = document.getElementsByClassName("small-img");
+					SmallImg[0].onclick = function() {
+						ProductImg.src = SmallImg[0].src;
+					}
+					SmallImg[1].onclick = function() {
+						ProductImg.src = SmallImg[1].src;
+					}
+					SmallImg[2].onclick = function() {
+						ProductImg.src = SmallImg[2].src;
+					}
+					SmallImg[3].onclick = function() {
+						ProductImg.src = SmallImg[3].src;
+					}
+					
+				</script>
 				<div class = "col-6 ">
 					<div class = "information">
 					<p class = "text-muted">Fashion/Dresses</p>
@@ -86,27 +120,130 @@
 					<button type="button" class="btn btn-outline-dark round active" aria-pressed = "true" onclick = "document.getElementById('changeText').innerHTML = 'A classic, solid turtleneck in a soft cotton blend fabric. Ideal to layer under a wool coat during colder days or underneath a dress for a sophisticated look. Available in two colours.'">Description</button>
 					<button type="button" class="btn btn-outline-dark round " onclick = "document.getElementById('changeText').innerHTML = 'Material: 50 % Cotton, 50 % Lyocell <br>Fit: Normal <br> Neckline: Turtleneck'">Details</button>
 					<button type="button" class="btn btn-outline-dark round" onclick = "document.getElementById('changeText').innerHTML = 'Machine wash 30°C gentle cycle'">Washing</button>
-					<button type="button" class="btn btn-outline-dark round" onclick = "document.getElementById('changeText').innerHTML = 'HIIII'" >Sustainability</button>
+					<button type="button" class="btn btn-outline-dark round" onclick = "document.getElementById('changeText').innerHTML = 'Made with Organic Cotton<br>Made in Safe Factories<br>Reduced With Materials to Decrease Water Waste'" >Sustainability</button>
 					<div id = "changeText">A classic, solid turtleneck in a soft cotton blend fabric. Ideal to layer under a wool coat during colder days or underneath a dress for a sophisticated look. Available in two colours.</div>
 					</div>
 					<script>
 // Add active class to the current button (highlight it)
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
-</script>
+						var header = document.getElementById("myDIV");
+						var btns = header.getElementsByClassName("btn");
+						for (var i = 0; i < btns.length; i++) {
+  							btns[i].addEventListener("click", function() {
+  							var current = document.getElementsByClassName("active");
+  							current[0].className = current[0].className.replace(" active", "");
+  							this.className += " active";
+  						});
+						}
+					</script>
+					<select class="size">
+						<option>Select Size</option>
+						<option>XS</option>
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+
+					</select>
+					<br>
+					<div class="add">
+						<input type="number" value="1" class = "quantity" >
+						<button type="button" class="btn btn-dark btn-lg positon">ADD TO CART</button>
+					
+					</div>
+					
 
 				</div>
 			</div>
 		</div>
+		
+		<div class="sustainability">
+			<h1 class="text-center sus"><strong>Sustainability</strong></h1>
+		
+			<p class="text-center ques"><em>Did you know it takes 700 gallons of water to make one shirt?</em></p>
+		
+			<h2 class="text-center sure"><strong>How did we make sure this product was produced sustainably?</strong></h2>
+		</div>
+	
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+		<div class="card mb-3">
+  <img class="card-img-top" src="img16.png" alt="Card image cap">
+  <div class="card-body color">
+    <h5 class="card-title text-center"><strong>Made with Organic Cotton</strong></h5>
+	  <br>
+    <p class="card-text text-center">Organic cotton is grown without chemical pesticides, fertilizers and genetically modified organisms (GMOs). About 80 % of the organic cotton is rain-fed thus requires less watering than conventional cotton, which reduces the pressure on local water sources. </p>
+	  <br>
+	  <br>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+		<div class="card mb-3">
+  <img class="card-img-top" src="img14.png" alt="Card image cap">
+  <div class="card-body color">
+    <h5 class="card-title text-center"><strong>We Saved Water</strong></h5>
+	  <br>
+    <p class="card-text text-center">We used organic cotton and that helped us waste less water. On average, organic cotton saves 1,982 gallons of water compared to chemically grown cotton. Organic cotton also produces fewer greenhouse gases and uses 62% less energy compared to chemically grown cotton. </p>
+	  <br>
+	  <br>
+  </div>
+</div>
+    </div>
+    <div class="carousel-item">
+		<div class="card mb-3">
+  <img class="card-img-top" src="img17.png" alt="Card image cap">
+  <div class="card-body color">
+    <h5 class="card-title text-center"><strong>Made Safe Factories</strong></h5>
+	  <br>
+    <p class="card-text text-center">We adopted our Code of Conduct in 1998 and have ever since worked with suppliers who actively pursue freedom of association, a good working environment, legal salaries and benefits, legal working hours, real employment, human treatment and compliance with the national laws that exist in production countries.</p>
+	  <br>
+	  <br>
+  </div>
+</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
 
 	</main>
+	<footer>
+		<div class ="row text-center ">
+			<div class="col-md-4 social">
+				<a href="https://sv-se.facebook.com/IndiskaSE/" target ="_blank" class="fa fa-facebook bottom"></a>
+				<a href="https://www.instagram.com/indiskaofficial/?hl=en" target ="_blank"  class="fa fa-instagram bottom"></a>
+				<a href="https://www.linkedin.com/company/indiska-magasinet-ab" target ="_blank" class="fa fa-linkedin bottom"></a>
+				
+			</div>
+			<div class="col-md-4 copy">
+				<p>Copyright &copy; 2020 Indiska</p>
+			</div>
+			<div class="col-md-4 keep text-center">
+				<form>
+					<input type = "email" placeholder="Join Our Newsletter">
+				</form>
+				
+			
+			</div>
+		</div>
+		
+		
+		
+		
+	</footer>
 
 	
 <!-- Optional JavaScript -->
