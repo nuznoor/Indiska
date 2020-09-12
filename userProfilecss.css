@@ -327,47 +327,57 @@ ul.tabs li.current{
   color: #8E8E8E;
   margin: 0;
 }
-.footer, .footer strong{
+footer {
+	background: rgb(248, 248, 248);
+	padding: 25px;
+	margin-top: 200px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+}
+
+.bottom {
+  padding: 15px;
+  font-size: 30px!important;
+  width: 60px;
   text-align: center;
-}
-.footer p{
-  margin-bottom: 0px;
-}
-.footer-box-main{
-  width: 80%;
-  background-color: red;
-  margin: 0 auto;
-}
-.footer-box{
-  height: 50px;
-  width: 50px;
-  border: 1px solid #939393;
+  text-decoration: none!important;
+  margin: 23px 14px;
   border-radius: 50%;
-  display: inline-block;
-  margin-right: 20px;
 }
-.footer-box:last-child{
-  margin-right: 0px;
+
+.fa:hover {
+    opacity: 0.7;
 }
-.footer-box i{
-  line-height: 50px;
-  font-size: 20px;
+
+.fa-facebook {
+  background: #3B5998!important;
+  color: white!important;
 }
-.footer-box .fa-facebook{
-  color: #365597;  
+.fa-instagram {
+  background: linear-gradient(to top right, #405DE6,#5851DB,#833AB4, #C13584, #E1306C, #FD1D1D );
+  color: white!important;
 }
-.footer-box .fa-twitter{
-  color: #01B0F4;  
+.fa-linkedin {
+  background: #007bb5!important;
+  color: white!important;
 }
-.footer-box .fa-linkedin{
-  color: #0F80BB;  
+.copy {
+	margin-top: 42px;
 }
-.footer-box .fa-google{
-  color: #D53B1F;  
+.keep input {
+	border: hidden;
+	border-bottom: solid #000000;
+    background: rgb(248, 248, 248);
+    outline: none;
+	padding-top: 42px;
 }
-.footer-box .fa-instagram{
-  color: #CF3594;  
-}
+.keep input[type="email"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: center; 
+            } 
 #Basic-detail{
   height: 210px;
   float: left;
