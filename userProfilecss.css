@@ -448,10 +448,7 @@ ul.tabs li.current{
   .footer-box i{
     line-height: 40px;
   }
-  .footer-box {
-    height: 42px;
-    width: 35px;
-  }
+  
   #Portfolio, #Edu-detail, #Basic-detail{
     height: auto;
   }
