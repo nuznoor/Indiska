@@ -21,7 +21,7 @@ body{
   height: 100%;
 }
 .user-image{
-  float: left;
+  float: right;
   position: relative;
   width: 23%;
   height: 135px;
